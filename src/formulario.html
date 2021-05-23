@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <nav class="bg-dark navbar py-2">
+        <nav class="navbar">
           <a href="./index.html" class="no-underline text-white m-2 text-2">LOGO</a>
           <ul class="flex flex-wrap list-none md:flex-col">
             <li class="m-4">
-                <a href="./formulario.html" class="nav-link">Comprar ticket</a>
+                <a href="./formulario.html" class="nav-link  text-white">Comprar ticket</a>
             </li>
             </li>
           </ul>
@@ -24,7 +24,7 @@
         <div class="flex flex-col items-center my-20">
             <form action="POST" class="max-w-700">
                 <!-- Actual 48rem - cambiar a 44rem -->
-                <h1 class="mb-12 font-medium text-4x1">¿Desea comprar entradas al festival?</h1>
+                <h1 class="mb-12 font-medium text-2.5">¿Desea comprar entradas al festival?</h1>
                 <!-- REVISAR EL TAMAÑO DE LA FUENTE DEL TITULO -->
                     <div class="row">
                         <div class="col">
@@ -79,30 +79,30 @@
                       
                       <div class="mt-3">
                         <label for="email">Indique su correo electrónico</label>
-                        <input class="form-control" type="email"  id="email" placeholder="example@hotmail.com" required>  
+                        <input class="form-control" type="email"  id="email" placeholder="example@hotmail.com" required>
                       </div>
                       
                       <div class="mt-3">
                         
                           <fieldset>
-                              <legend>
+                              <legend class="mb-2 text-2xl">
                                   Datos de pago
                               </legend>
                                     
-                              <p>Indique el tipo de tarjeta que va a utilizar: </p>
+                              <p class="mb-4">Indique el tipo de tarjeta que va a utilizar: </p>
                               <div>
                                   <div class="form-check m-2">
-                                      <input class="form-check-input rounded-circle" type="radio" name="payment" id="credit-card" value="a" checked>
+                                      <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="credit-card" value="a" checked>
                                       <label class="form-check-label" for="credit-card">Mastercard</label>    
                                   </div>
           
                                   <div class="form-check m-2">
-                                      <input class="form-check-input rounded-circle" type="radio" name="payment" id="paypal" value="b">
+                                      <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="paypal" value="b">
                                       <label class="form-check-label" for="paypal">Visa</label>
                                   </div>
                                   
                                   <div class="form-check m-2">
-                                      <input class="form-check-input rounded-circle" type="radio" name="payment" id="other" value="c">
+                                      <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="other" value="c">
                                       <label class="form-check-label" for="other">Loremcard</label>
                                   </div>
                               </div>  
@@ -138,7 +138,7 @@
                       </div>
     
                       <div class="m-3">                    
-                        <input class="form-check-input rounded" type="checkbox" name="terms" id="terms" required>  
+                        <input class="form-check-input rounded checked:bg-tick" type="checkbox" name="terms" id="terms" required>  
                         <label class="form-check-label" for="terms">He leido y acepto los <a href="#">términos y condiciones de compra</a>.</label>
                       </div>
                       

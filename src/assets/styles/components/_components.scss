@@ -16,16 +16,24 @@
 @layer components {
 
     .navbar{
-        @apply relative flex flex-wrap text-center items-center justify-between px-3 py-2;
+        @apply relative flex bg-dark  flex-wrap text-center items-center justify-between px-3 py-2;
     }
 
     .nav-link{
-        @apply text-xl-l uppercase block py-2 no-underline text-white-darker transition delay-150 ease-in-out hover:text-white;
+        @apply text-xl-l uppercase block py-2 no-underline text-white-darker transition delay-150 ease-in-out hover:text-white-darker-2;
         //CAMBIAR DELAY A .15S
     }
 
+    .footer{
+        @apply bg-darker p-6;
+    }
+
+    .footer-contact{
+        @apply flex flex-wrap justify-center m-0 p-0 list-none;
+    }
+
     .card{
-        @apply max-w-xs text-center mb-6 relative flex flex-col min-w-0 break-words bg-white bg-clip-border	border rounded;
+        @apply max-w-350 text-center mb-6 relative flex flex-col min-w-0 break-words bg-white bg-clip-border	border rounded;
     }
 
     .card-img-top{
@@ -49,16 +57,20 @@
         @apply m-0;
     }
 
+    .card-footer{
+        @apply flex flex-wrap justify-center px-4 py-2 bg-gray-lighter border-t border-solid border-gray-lighter;
+    }
+
+    .fab{
+        @apply no-underline p-10p text-3xl hover:opacity-70;
+    }
+
     .row{
         @apply flex flex-wrap -mx-4;
-        //@apply flex flex-wrap flex-col space-x-4 md:flex-row;
     }
 
     .col{
         @apply w-full md:w-1/2 px-3;
-        //@apply flex-1.1;
-        //@apply w-full max-w-full flex-1.1 px-1.5 mt-1;
-        //AÑADIR LOS PADDINGS
     }
 
     .col-auto{
@@ -67,12 +79,10 @@
 
     .form-select{
         @apply w-full text-base py-1.5 pl-3 pr-9 font-normal leading-normal bg-white border border-solid border-gray rounded focus:border-blue-2 focus:shadow-blue;
-        //PADDING y BLOCK
     }
 
     .form-control{
-        @apply block w-full text-base py-1.5 px-3 font-normal leading-normal bg-white bg-clip-padding border border-solid border-gray rounded focus:border-blue-2 focus:shadow-blue;
-        //PADDING y COLOR y DURATION 
+        @apply block w-full text-base py-1.5 px-3 font-normal leading-normal bg-white bg-clip-padding border border-solid border-gray focus:outline-none rounded focus:border-blue-2 focus:shadow-blue;
     }
 
     .form-check{
@@ -80,11 +90,10 @@
     }
 
     .form-check-input{
-        @apply w-4 h-4 mt-1 mr-2 float-left bg-white bg-no-repeat bg-middle bg-contain checked:bg-test checked:border-blue checked:bg-blue border focus:border-blue-2 focus:shadow-blue border-solid border-opacity-25 appearance-none;  
+        @apply w-4 h-4 mt-1 mr-2 float-left bg-white bg-no-repeat bg-middle bg-contain checked:border-blue checked:bg-blue border focus:border-blue-2 focus:shadow-blue border-solid border-opacity-25 appearance-none;  
     }
 
     .btn{
-        @apply inline-block text-base font-normal text-center text-white leading-normal align-middle border border-solid border-transparent px-3 py-1.5  bg-primary focus:shadow-blue rounded;
-        //REVISAR PADDING y TRANSICION 
+        @apply inline-block text-base font-normal text-center text-white leading-normal align-middle border border-solid border-transparent px-3 py-1.5  bg-primary focus:shadow-blue rounded hover:bg-blue-darker hover:border-blue-darker;
     }
 }

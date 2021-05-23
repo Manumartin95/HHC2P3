@@ -6,8 +6,11 @@ module.exports = {
       ...theme('colors'),
       'primary': '#5c6bc0',
       'secondary': '#ffed4a',
-      'dark': '#292b2c',
-      'blue': '#0d6efd'
+      'gray-lighter': 'rgba(0,0,0,.03)',
+      'dark': '#333637',
+      'darker': '#292b2c',
+      'blue': '#0d6efd',
+      'blue-darker': '#4e5ba3'
      }),
 
      textColor: theme => theme('colors'),
@@ -17,7 +20,11 @@ module.exports = {
        'danger': '#e3342f',
        'gray-darker': '#6c757d',
        'white': '#fff',
-       'white-darker': 'hsla(0,0%,100%,.55)'
+       'white-darker': 'hsla(0,0%,100%,.55)',
+       'white-darker-2': 'hsla(0,0%,100%,.75)',
+       'blue-f': '#3b5998',
+       'blue-t': '#1da1f2',
+       'pink-i': '#c13584'
      },
 
      fontSize: {
@@ -32,6 +39,7 @@ module.exports = {
       '3xl': '1.875rem',
       '2': '2rem',
       '4xl': '2.25rem',
+      '2.5':'2.5rem',
        '5xl': '3rem',
        '6xl': '4rem',
       '7xl': '5rem',
@@ -56,7 +64,8 @@ module.exports = {
         max: 'max-content',
         prose: '65ch',
         'xsl': '22rem',
-        '700': '700px'
+        '700': '700px',
+        '350': '350px'
      },
      
     flex: {
@@ -86,13 +95,16 @@ module.exports = {
 
     extend: {
       backgroundImage: theme => ({
-        'test': "url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='%23fff'/%3E%3C/svg%3E')",
+        'circle': "url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='%23fff'/%3E%3C/svg%3E')",
+        'tick': "url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3 6-6'/%3E%3C/svg%3E')"
        }),
       
        borderColor: theme => ({
+         'gray-lighter': 'rgba(0,0,0,.125)',
          'gray': '#ced4da',
          'blue': '#0d6efd',
-         'blue-2': '#86b7fe'
+         'blue-2': '#86b7fe',
+         'blue-darker': '#4a569a'
       }),
 
       borderRadius: theme => ({
@@ -101,7 +113,11 @@ module.exports = {
 
       boxShadow: theme => ({
         'blue': '0 0 0 0.25rem rgb(13 110 253 / 25%)'
-      })
+      }),
+
+      padding: {
+        '10p': '10px'
+       }
     },
   },
   variants: {
