@@ -23,9 +23,7 @@
     <div class="m-4 md:m-20">
         <div class="flex flex-col items-center my-20">
             <form action="POST" class="max-w-700">
-                <!-- Actual 48rem - cambiar a 44rem -->
                 <h1 class="mb-12 font-medium text-2.5">¿Desea comprar entradas al festival?</h1>
-                <!-- REVISAR EL TAMAÑO DE LA FUENTE DEL TITULO -->
                     <div class="row">
                         <div class="col">
                             <label for="concierto">Seleccione cual es el ticket que quiere comprar</label>
@@ -91,17 +89,17 @@
                                     
                               <p class="mb-4">Indique el tipo de tarjeta que va a utilizar: </p>
                               <div>
-                                  <div class="form-check m-2">
+                                  <div class="form-check">
                                       <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="credit-card" value="a" checked>
                                       <label class="form-check-label" for="credit-card">Mastercard</label>    
                                   </div>
           
-                                  <div class="form-check m-2">
+                                  <div class="form-check">
                                       <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="paypal" value="b">
                                       <label class="form-check-label" for="paypal">Visa</label>
                                   </div>
                                   
-                                  <div class="form-check m-2">
+                                  <div class="form-check">
                                       <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="other" value="c">
                                       <label class="form-check-label" for="other">Loremcard</label>
                                   </div>
@@ -143,7 +141,6 @@
                       </div>
                       
                       <button class="btn btn-primary" type="submit">Comprar</button>
-                  
             </form>
         </div>
     </div>

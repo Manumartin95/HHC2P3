@@ -73,10 +73,6 @@
         @apply w-full md:w-1/2 px-3;
     }
 
-    .col-auto{
-        @apply flex-1.2;
-    }
-
     .form-select{
         @apply w-full text-base py-1.5 pl-3 pr-9 font-normal leading-normal bg-white border border-solid border-gray rounded focus:border-blue-2 focus:shadow-blue;
     }
@@ -86,7 +82,7 @@
     }
 
     .form-check{
-        @apply inline-block;
+        @apply inline-block  m-2;
     }
 
     .form-check-input{
