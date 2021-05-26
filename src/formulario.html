@@ -20,129 +20,140 @@
         </nav>
       </header>
 
-    <div class="m-4 md:m-20">
-        <div class="flex flex-col items-center my-20">
-            <form action="POST" class="max-w-700">
-                <h1 class="mb-12 font-medium text-2.5">¿Desea comprar entradas al festival?</h1>
-                    <div class="row">
-                        <div class="col">
-                            <label for="concierto">Seleccione cual es el ticket que quiere comprar</label>
-                            <select name="concierto" id="concierto" class="form-select">
-                                <option value="a">Ticket de Festival Lorem normal - (22/10/21)</option>
-                                <option value="b">Ticket de Festival Lorem especial - (22/10/21)</option>
-                                <option value="c">Ticket de Festival Lorem VIP - (22/10/21)</option>
-                            </select>  
-                          </div>
-                        
-                        <div class="col">
-                            <label for="cantidad">Nº Entradas</label>
-                            <select name="cantidad" id="cantidad" class="form-select" aria-describedby="maxEntries">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <small id="maxEntries" class="text-gray-darker mt-1 text-sm">El número máximo de entradas a comprar es de 3.</small>
-                          </div>
-                    </div>
-                      
-                      <div class="row mt-4">
-                        <div class="col">
-                            <label for="nombre">Nombre: </label>
-                            <input class="form-control" type="text"  id="nombre" placeholder="Nombre completo" required>  
-                          </div>
-    
-                        <div class="col">
-                            <label for="apellidos">Apellidos: </label>
-                            <input class="form-control" type="text"  id="apellidos" placeholder="Apellido1 Apellido2" required>  
+    <main>
+        <div class="m-4 md:m-20">
+            <div class="flex flex-col items-center my-20">
+                <form action="POST" class="max-w-700" netlify>
+                    <h1 class="mb-12 font-medium text-2.5">¿Desea comprar entradas al festival?</h1>
+                        <div class="row">
+                            <div class="col">
+                                <label for="concierto">Seleccione cual es el ticket que quiere comprar</label>
+                                <select name="concierto" id="concierto" class="form-select">
+                                    <option value="a">Ticket de Festival Lorem normal - (22/10/21)</option>
+                                    <option value="b">Ticket de Festival Lorem especial - (22/10/21)</option>
+                                    <option value="c">Ticket de Festival Lorem VIP - (22/10/21)</option>
+                                </select>  
+                              </div>
+                            
+                            <div class="col">
+                                <label for="cantidad">Nº Entradas</label>
+                                <select name="cantidad" id="cantidad" class="form-select" aria-describedby="maxEntries">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <small id="maxEntries" class="text-gray-darker mt-1 text-sm">El número máximo de entradas a comprar es de 3.</small>
+                              </div>
                         </div>
-                      </div>
-                      
-                      <div class="row mt-3">
-                        <div class="col md:w-1/4">
-                            <label for="pref">Prefijo telefónico: </label>
-                            <select name="pref" id="pref" class="form-select">
-                                <option value="34">+34</option>
-                                <option value="355">+355</option>
-                                <option value="1">+1</option>
-                                <option value="55">+54</option>
-                                <option value="375">+375</option>
-                            </select>
-                        </div>
-    
-                        <div class="col md:w-3/4">
-                            <label for="phone">Indique su número de teléfono</label>
-                            <input class="form-control" type="text"  id="phone" minlength="9" maxlength="9" required>  
-                          </div>    
-                      </div>
-                      
-                      <div class="mt-3">
-                        <label for="email">Indique su correo electrónico</label>
-                        <input class="form-control" type="email"  id="email" placeholder="example@hotmail.com" required>
-                      </div>
-                      
-                      <div class="mt-3">
-                        
-                          <fieldset>
-                              <legend class="mb-2 text-2xl">
-                                  Datos de pago
-                              </legend>
-                                    
-                              <p class="mb-4">Indique el tipo de tarjeta que va a utilizar: </p>
-                              <div>
-                                  <div class="form-check">
-                                      <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="credit-card" value="a" checked>
-                                      <label class="form-check-label" for="credit-card">Mastercard</label>    
-                                  </div>
-          
-                                  <div class="form-check">
-                                      <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="paypal" value="b">
-                                      <label class="form-check-label" for="paypal">Visa</label>
+                          
+                          <div class="row mt-4">
+                            <div class="col">
+                                <label for="nombre">Nombre: </label>
+                                <input class="form-control" type="text"  id="nombre" placeholder="Nombre completo" required>  
+                              </div>
+        
+                            <div class="col">
+                                <label for="apellidos">Apellidos: </label>
+                                <input class="form-control" type="text"  id="apellidos" placeholder="Apellido1 Apellido2" required>  
+                            </div>
+                          </div>
+                          
+                          <div class="row mt-3">
+                            <div class="col md:w-1/4">
+                                <label for="pref">Prefijo telefónico: </label>
+                                <select name="pref" id="pref" class="form-select">
+                                    <option value="34">+34</option>
+                                    <option value="355">+355</option>
+                                    <option value="1">+1</option>
+                                    <option value="55">+54</option>
+                                    <option value="375">+375</option>
+                                </select>
+                            </div>
+        
+                            <div class="col md:w-3/4">
+                                <label for="phone">Indique su número de teléfono</label>
+                                <input class="form-control" type="text"  id="phone" minlength="9" maxlength="9" required>  
+                              </div>    
+                          </div>
+                          
+                          <div class="mt-3">
+                            <label for="email">Indique su correo electrónico</label>
+                            <input class="form-control" type="email"  id="email" placeholder="example@hotmail.com" required>
+                          </div>
+                          
+                          <div class="mt-3">
+                            
+                              <fieldset>
+                                  <legend class="mb-2 text-2xl">
+                                      Datos de pago
+                                  </legend>
+                                        
+                                  <p class="mb-4">Indique el tipo de tarjeta que va a utilizar: </p>
+                                  <div>
+                                      <div class="form-check">
+                                          <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="credit-card" value="a" checked>
+                                          <label class="form-check-label" for="credit-card">Mastercard</label>    
+                                      </div>
+
+                                      <div class="form-check">
+                                          <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="paypal" value="b">
+                                          <label class="form-check-label" for="paypal">Visa</label>
+                                      </div>
+                                      
+                                      <div class="form-check">
+                                          <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="other" value="c">
+                                          <label class="form-check-label" for="other">Loremcard</label>
+                                      </div>
+                                  </div>  
+              
+                                  <div class="row">
+                                      <div class="col">
+                                          <label for="nt">Número de tarjeta</label>
+                                          <input class="form-control" type="text" name="nt" id="nt" placeholder="XXXX XXXX XXXX XXXX" minlength="16" maxlength="16" required>
+                                      </div>
+                    
+                                      <div class="col">
+                                          <label for="tt">Titular de la tarjeta</label>
+                                          <input class="form-control" type="text" name="tt" id="tt" placeholder="Nombre Apellido1 Apellido2" required>
+                                      </div>
                                   </div>
                                   
-                                  <div class="form-check">
-                                      <input class="form-check-input rounded-circle checked:bg-circle" type="radio" name="payment" id="other" value="c">
-                                      <label class="form-check-label" for="other">Loremcard</label>
+                                  <div class="row">
+                                      <div class="col">
+                                          <label for="fc">Fecha de caducidad</label>
+                                          <input class="form-control" type="date" name="fc" id="fc" required>
+                                      </div>
+                    
+                                      <div class="col">
+                                          <label for="cvv">
+                                            <a href="#" data-toggle="popover">
+                                              CVV / CVC*
+                                            </a>
+                                            </label>
+                                          <input class="form-control" type="text" name="cvv" id="cvv" minlength="3" maxlength="3" placeholder="XXX" required>
+                                      </div>    
                                   </div>
-                              </div>  
-          
-                              <div class="row">
-                                  <div class="col">
-                                      <label for="nt">Número de tarjeta</label>
-                                      <input class="form-control" type="text" name="nt" id="nt" placeholder="XXXX XXXX XXXX XXXX" minlength="16" maxlength="16" required>
-                                  </div>
-                
-                                  <div class="col">
-                                      <label for="tt">Titular de la tarjeta</label>
-                                      <input class="form-control" type="text" name="tt" id="tt" placeholder="Nombre Apellido1 Apellido2" required>
-                                  </div>
-                              </div>
-                              
-                              <div class="row">
-                                  <div class="col">
-                                      <label for="fc">Fecha de caducidad</label>
-                                      <input class="form-control" type="date" name="fc" id="fc" required>
-                                  </div>
-                
-                                  <div class="col">
-                                      <label for="cvv">
-                                        <a href="#" data-toggle="popover">
-                                          CVV / CVC*
-                                        </a>
-                                        </label>
-                                      <input class="form-control" type="text" name="cvv" id="cvv" minlength="3" maxlength="3" placeholder="XXX" required>
-                                  </div>    
-                              </div>
-                          </fieldset>
-                      </div>
-    
-                      <div class="m-3">                    
-                        <input class="form-check-input rounded checked:bg-tick" type="checkbox" name="terms" id="terms" required>  
-                        <label class="form-check-label" for="terms">He leido y acepto los <a href="#">términos y condiciones de compra</a>.</label>
-                      </div>
-                      
-                      <button class="btn btn-primary" type="submit">Comprar</button>
-            </form>
+                              </fieldset>
+                          </div>
+        
+                          <div class="m-3">                    
+                            <input class="form-check-input rounded checked:bg-tick" type="checkbox" name="terms" id="terms" required>  
+                            <label class="form-check-label" for="terms">He leido y acepto los <a href="#">términos y condiciones de compra</a>.</label>
+                          </div>
+                          
+                          <button class="btn btn-primary" type="submit">Comprar</button>
+                </form>
+            </div>
         </div>
-    </div>
+    
+    </main>
+    
+    <footer class="footer">
+        <ul class="footer-contact">
+          <li><a href="#" class="text-white no-underline mx-4 hover:font-bold">Twitter</a></li>
+          <li><a href="#" class="text-white no-underline mx-4 hover:font-bold">Instagram</a></li>
+          <li><a href="#" class="text-white no-underline mx-4 hover:font-bold">Facebook</a></li>
+        </ul>
+      </footer>
 </body>
 </html>

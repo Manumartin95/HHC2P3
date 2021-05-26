@@ -8,8 +8,17 @@
     h3 {
       @apply text-lg font-medium;
     }
+
+    h5,h6{
+        @apply leading-tight-2;
+    }
+
     a {
-      @apply underline;
+      @apply underline text-blue;
+    }
+
+    body{
+        @apply bg-gray m-0;
     }
   }
 
@@ -20,8 +29,7 @@
     }
 
     .nav-link{
-        @apply text-xl-l uppercase block py-2 no-underline text-white-darker transition delay-150 ease-in-out hover:text-white-darker-2;
-        //CAMBIAR DELAY A .15S
+        @apply text-xl-l uppercase block py-2 no-underline text-white-darker transition duration-150 ease-in-out hover:text-white-darker-2;
     }
 
     .footer{
@@ -33,7 +41,7 @@
     }
 
     .card{
-        @apply max-w-350 text-center mb-6 relative flex flex-col min-w-0 break-words bg-white bg-clip-border	border rounded;
+        @apply max-w-350 text-center mb-6 relative flex flex-col min-w-0 break-words bg-white bg-clip-border border rounded;
     }
 
     .card-img-top{
@@ -46,7 +54,6 @@
 
     .card-title{
         @apply text-xl mb-2 font-medium;
-        //REVISAR LINEA Y FONT WEIGHT
     }
 
     .card-subtitle{
@@ -86,7 +93,7 @@
     }
 
     .form-check-input{
-        @apply w-4 h-4 mt-1 mr-2 float-left bg-white bg-no-repeat bg-middle bg-contain checked:border-blue checked:bg-blue border focus:border-blue-2 focus:shadow-blue border-solid border-opacity-25 appearance-none;  
+        @apply w-4 h-4 mt-1 mr-2 float-left bg-white bg-no-repeat bg-middle bg-contain border border-bgray border-solid checked:border-blue checked:bg-blue focus:border-blue-2 focus:shadow-blue border-opacity-25 appearance-none;  
     }
 
     .btn{
